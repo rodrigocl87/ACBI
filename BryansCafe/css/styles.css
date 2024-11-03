@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body e Layout Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 722px;
+    height: auto;
+}
+
+/* About and History Sections */
+.about-section, .history-section {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content, .history-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* About Section Layout */
+.about-image img {
+    width: 263px;
+    height: 234px;
+    border-radius: 5px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* History Section Layout */
+.history-text {
+    flex: 1;
+}
+
+.history-image img {
+    width: 363px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.history-text h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .about-content, .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img, .history-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+}
+
+/* Estilos para as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border:
